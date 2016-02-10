@@ -7,7 +7,7 @@ This component is based on the blueprint of Veams-Components.
 ### Include: Page
 
 ``` hbs
-{{! @INSERT :: START @id: quote, @tag: component-partial }}
+{{! @INSERT :: START @id: picture, @tag: component-partial }}
 {{#with picture-bp}}
 	{{> c-picture}}
 {{/with}}
