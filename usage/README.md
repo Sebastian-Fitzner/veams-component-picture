@@ -1,6 +1,6 @@
 # Picture
 
-This component is based on the blueprint of Veams-Components.
+Include responsive (content) images. This component is based on the blueprint of Veams-Components.
 
 ## Usage
 
