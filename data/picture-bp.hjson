@@ -2,54 +2,41 @@
 	"pictureContextClass": "default",
 	"pictureClasses": false,
 
-	"fallbackSrc": "http://placehold.it/400x200", // path to fallback image - mostly the smallest image defined below
+	"fallbackSrc": "http://placehold.it/400x200",
 	"alt":  "Alternative text that describes the image",
 
 	"items": [
 		{
-			// If the browser supports the format described in the type attribute, he uses that source; otherwise, it’s skipped.
-			// Use type attribute only if you provide new file formats like webp, jx2, jp2, apng, etc.
-			// "type": "image/webp",
-
-			// If a query in a media attribute evaluates to true, the browser must use that source; otherwise, it’s skipped.
-			// Use media attribute only for art direction use case.
-			// "media": "(min-width: 200px)", 
-
-			// Use srcset to provide different image sizes
 			"srcset": [
 				{
-					"src": "http://placehold.it/960x200", // path to the image
-					"image-width": "960w" //  the width in physical pixels of image referenced above
+					"src": "http://placehold.it/960x200",
+					"imageWidth": "960w"
 				},{
 					"src": "http://placehold.it/1920x200",
-					"image-width": "1920w"
+					"imageWidth": "1920w"
 				},{
 					"src": "http://placehold.it/700x200",
-					"image-width": "700w"
+					"imageWidth": "700w"
 				},{
 					"src": "http://placehold.it/1400x200",
-					"image-width": "1400w"
+					"imageWidth": "1400w"
 				},{
 					"src": "http://placehold.it/400x200",
-					"image-width": "400w"
+					"imageWidth": "400w"
 				},{
 					"src": "http://placehold.it/800x200",
-					"image-width": "800w"
+					"imageWidth": "800w"
 				}
 			],
-			
-			// Use sizes to define the width of our images at a given screen size.
-			// The media queries could reflect the breakpoints in your project, but it's not mandatory to stick to them.
-			// If the width of an image in the srcset attribute is set (= "image-width"), the sizes attribute must be present.
 			"sizes": [
 				{
-					"screen-width": "(min-width: 992px)", // media query defining which image to use
-					"image-width": "960px" // width of image in viewport matching the media query above
+					"screenWidth": "(min-width: 992px)",
+					"imageWidth": "960px"
 				},{
-					"screen-width": "(min-width: 768px)",
-					"image-width": "calc( 100vw - 50px )"
+					"screenWidth": "(min-width: 768px)",
+					"imageWidth": "calc( 100vw - 50px )"
 				},{
-					"image-width": "calc( 100vw - 30px )"
+					"imageWidth": "calc( 100vw - 30px )"
 				}
 			]
 		}

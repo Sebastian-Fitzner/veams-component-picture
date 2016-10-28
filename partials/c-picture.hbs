@@ -15,7 +15,7 @@ Options:
 
 	<!--[if IE 9]><audio><![endif]-->
 	{{#each items}}
-		<source srcset="{{#eachIndex srcset}}{{#isnt index 0}}, {{/isnt}}{{item.src}}{{#if item.image-width}} {{item.image-width}}{{/if}}{{/eachIndex}}"{{#if sizes}} sizes="{{#eachIndex sizes}}{{#isnt index 0}},{{/isnt}}{{item.screen-width}} {{item.image-width}}{{/eachIndex}}"{{/if}}{{#if media}} media="{{media}}"{{/if}}{{#if type}} type="{{type}}"{{/if}} />
+		<source srcset="{{#eachIndex srcset}}{{#isnt index 0}}, {{/isnt}}{{item.src}}{{#if item.imageWidth}} {{item.imageWidth}}{{/if}}{{/eachIndex}}"{{#if sizes}} sizes="{{#eachIndex sizes}}{{#isnt index 0}},{{/isnt}}{{item.screenWidth}} {{item.imageWidth}}{{/eachIndex}}"{{/if}}{{#if media}} media="{{media}}"{{/if}}{{#if type}} type="{{type}}"{{/if}} />
 	{{/each}}
 	<!--[if IE 9]></audio><![endif]-->
 
