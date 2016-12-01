@@ -1,9 +1,44 @@
 {
-	"pictureContextClass": "small",
-	"pictureAlt": "Simple Picture",
-	"pictureUrlStd": "http://placehold.it/800x600",
-	"picture320": "http://placehold.it/320x320",
-	"picture320_2x": "http://placehold.it/640x640",
-	"picture321": "http://placehold.it/800x600",
-	"picture321_2x": "http://placehold.it/1600x1200"
+	"pictureContextClass": "default",
+	"pictureClasses": false,
+
+	"fallbackSrc": "http://placehold.it/400x200",
+	"alt":  "Alternative text that describes the image",
+
+	"items": [
+		{
+			"srcset": [
+				{
+					"src": "http://placehold.it/960x200",
+					"imageWidth": "960w"
+				},{
+					"src": "http://placehold.it/1920x200",
+					"imageWidth": "1920w"
+				},{
+					"src": "http://placehold.it/700x200",
+					"imageWidth": "700w"
+				},{
+					"src": "http://placehold.it/1400x200",
+					"imageWidth": "1400w"
+				},{
+					"src": "http://placehold.it/400x200",
+					"imageWidth": "400w"
+				},{
+					"src": "http://placehold.it/800x200",
+					"imageWidth": "800w"
+				}
+			],
+			"sizes": [
+				{
+					"screenWidth": "(min-width: 992px)",
+					"imageWidth": "960px"
+				},{
+					"screenWidth": "(min-width: 768px)",
+					"imageWidth": "calc( 100vw - 50px )"
+				},{
+					"imageWidth": "calc( 100vw - 30px )"
+				}
+			]
+		}
+	]
 }
