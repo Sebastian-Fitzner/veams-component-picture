@@ -1,23 +1,20 @@
-{{! ---
-component: picture
-============================================
+---
+type: component
+layout: lyt-docs
+contextData: "picture-bp"
+---
 
-Requirements:
-- (only hbs)
-
-Options:
-- pictureContextClass {String} [default] - Just pass a string
-- pictureClasses {String} - Modifier classes
-
---- }}
-
-<picture class="c-picture{{#if pictureContextClass}}--{{pictureContextClass}}{{else}}--default{{/if}}{{#if pictureClasses}} {{pictureClasses}}{{/if}}" data-css="c-picture">
+<picture class="c-picture{{#if settings.pictureContextClass}}--{{settings.pictureContextClass}}{{else}}--default{{/if}}
+	{{#if settings.pictureClasses}} {{settings.pictureClasses}}{{/if}}" data-css="c-picture">
 
 	<!--[if IE 9]><audio><![endif]-->
-	{{#each items}}
-		<source srcset="{{#eachIndex srcset}}{{#isnt index 0}}, {{/isnt}}{{item.src}}{{#if item.imageWidth}} {{item.imageWidth}}{{/if}}{{/eachIndex}}"{{#if sizes}} sizes="{{#eachIndex sizes}}{{#isnt index 0}},{{/isnt}}{{item.screenWidth}} {{item.imageWidth}}{{/eachIndex}}"{{/if}}{{#if media}} media="{{media}}"{{/if}}{{#if type}} type="{{type}}"{{/if}} />
+	{{#each content.items}}
+	<source {{#if ../settings.lazyload}}data-{{/if}}srcset="{{#each srcset}}{{#unless @first}}, {{/unless}}{{src}}{{#if imageWidth}} {{imageWidth}}{{/if}}{{/each}}"
+	        {{#if sizes}}sizes="{{#each sizes}}{{#unless @first}},{{/unless}}{{screenWidth}} {{imageWidth}}{{/each}}"{{/if}}
+		{{#if media}} media="{{media}}"{{/if}}
+		{{#if type}} type="{{type}}"{{/if}} />
 	{{/each}}
-	<!--[if IE 9]></audio><![endif]-->
+		<!--[if IE 9]></audio><![endif]-->
 
-	<img class="picture__image" src="{{fallbackSrc}}" alt="{{alt}}"/>
+	<img class="picture__image" src="{{content.fallbackSrc}}" alt="{{content.alt}}"/>
 </picture>

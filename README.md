@@ -1,6 +1,6 @@
 # Picture
 
-Include responsive (content) images. This component is based on the blueprint of Veams-Components.
+Include responsive (content) images. It supports lazy loading (when provided in your JavaScript).
 
 ## Usage
 
@@ -63,21 +63,3 @@ Media query (e.g. "(min-width: 992px)") defining which image to use.
 
 Width of image in viewport matching the media query defined in "screenWidth". Use width in pixel, e.g. "960px" or as a dynamic width, e.g. "calc( 100vw - 50px )".
 
-
-### Include: Page
-
-``` hbs
-{{! @INSERT :: START @id: picture, @tag: component-partial }}
-{{#with picture-bp}}
-	{{> c-picture}}
-{{/with}}
-{{! @INSERT :: END }}
-```
-
-### Include: SCSS
-
-``` scss
-// @INSERT :: START @tag: scss-import 
-@import "components/_c-picture";
-// @INSERT :: END
-```
