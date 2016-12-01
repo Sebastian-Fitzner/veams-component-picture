@@ -10,11 +10,11 @@ contextData: "picture-bp"
 	<!--[if IE 9]><audio><![endif]-->
 	{{#each content.items}}
 	<source {{#if ../settings.lazyload}}data-{{/if}}srcset="{{#each srcset}}{{#unless @first}}, {{/unless}}{{src}}{{#if imageWidth}} {{imageWidth}}{{/if}}{{/each}}"
-	        {{#if sizes}}sizes="{{#each sizes}}{{#unless @first}},{{/unless}}{{screenWidth}} {{imageWidth}}{{/each}}"{{/if}}
+	        {{#if sizes}} sizes="{{#each sizes}}{{#unless @first}}, {{/unless}}{{screenWidth}} {{imageWidth}}{{/each}}"{{/if}}
 		{{#if media}} media="{{media}}"{{/if}}
 		{{#if type}} type="{{type}}"{{/if}} />
 	{{/each}}
-		<!--[if IE 9]></audio><![endif]-->
+	<!--[if IE 9]></audio><![endif]-->
 
 	<img class="picture__image" src="{{content.fallbackSrc}}" alt="{{content.alt}}"/>
 </picture>

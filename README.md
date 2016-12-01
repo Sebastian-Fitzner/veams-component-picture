@@ -1,10 +1,12 @@
 # Picture
 
+## Description
+
 Include responsive (content) images. It supports lazy loading (when provided in your JavaScript).
 
-## Usage
+-------
 
-### Options:
+## Fields
 
 #### fallbackSrc
 `Type: string` | `Default: null`
