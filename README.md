@@ -8,6 +8,36 @@ Include responsive (content) images. It supports lazy loading (when provided in 
 
 ## Fields
 
+### Settings
+- settings.pictureContextClass {`String`} [default] - Context class
+- settings.pictureClasses {`String`} - Modifier classes
+- settings.lazyload {`Boolean`} - Set to true to use lazyload
+
+### Content
+- content.items {`Array`} - An array containing different images. 
+
+The images should differ in type or in picture detail, otherwise there's no need to add more than one child object. Each item will generate a `<source>` element.
+
+- content.items.type {`String`} - If the browser supports the format described in the type attribute, it uses that source; otherwise, the <source> element is skipped. 
+
+Example: "image/webp". Use type attribute only if you provide new file formats like webp, jx2, jp2, apng, etc.
+
+- settings.articleHeader.articleHeaderClasses {`String`} - Class for header
+- content.articleHeader.articleDate {`String`} - Date string
+- content.articleHeader.articleDatetime {`String`} - Date attribute
+- content.articleHeader.articleH1 {`String`} - Header H1
+- content.articleHeader.articleH2 {`String`} - Header H2
+- content.articleHeader.articleH3 {`String`} - Header H3
+- content.articleHeader.articleIntro {`String`} - Header Intro
+
+### Content
+- settings.articleContentClasses {`String`} - Classes content div
+
+### Footer
+- articleFooter {`Object`} - Object which contains multiple elements
+- settings.articleFooter.articleFooterClasses {`String`} - Class for footer element
+- content.articleFooter.articleFooterLink {`String`} - Footer link
+
 #### fallbackSrc
 `Type: string` | `Default: null`
 
