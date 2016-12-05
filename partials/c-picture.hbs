@@ -5,7 +5,7 @@ contextData: "picture-bp"
 ---
 
 <picture class="c-picture{{#if settings.pictureContextClass}}--{{settings.pictureContextClass}}{{else}}--default{{/if}}
-	{{#if settings.pictureClasses}} {{settings.pictureClasses}}{{/if}}" data-css="c-picture">
+	{{#if settings.pictureClasses}} {{settings.pictureClasses}}{{/if}}{{#if settings.lazyload}} lazyload{{/if}}" data-css="c-picture">
 
 	<!--[if IE 9]><audio><![endif]-->
 	{{#each content.items}}
@@ -16,5 +16,9 @@ contextData: "picture-bp"
 	{{/each}}
 	<!--[if IE 9]></audio><![endif]-->
 
-	<img class="picture__image" src="{{content.fallbackSrc}}" alt="{{content.alt}}"/>
+	{{#if content.fallbackSrc}}
+		<img class="picture__image{{#if settings.lazyload}} lazyload{{/if}}" src="{{content.fallbackSrc}}" alt="{{content.alt}}"/>
+	{{else}}
+		<h3 style="color: red; font-weight: bold;">Define a fallback picture!</h3>
+	{{/if}}
 </picture>
