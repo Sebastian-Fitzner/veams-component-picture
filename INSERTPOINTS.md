@@ -12,11 +12,11 @@
 ### Include: SCSS
 
 ``` scss
-// @INSERT :: START @tag: scss-import 
+// @INSERT :: START @tag: scss-import //
 @import "components/_c-picture";
-// @INSERT :: END
+// @INSERT :: END //
 
-// @INSERT :: START @tag: scss-import-self-contained 
+// @INSERT :: START @tag: scss-import-self-contained //
 @import "../templating/partials/components/picture/scss/_c-picture";
-// @INSERT :: END
+// @INSERT :: END //
 ```
