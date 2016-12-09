@@ -9,7 +9,7 @@ contextData: "picture-bp"
 
 	<!--[if IE 9]><audio><![endif]-->
 	{{#each content.items}}
-	<source {{#if ../settings.lazyload}}data-{{/if}}srcset="{{#each srcset}}{{#unless @first}}, {{/unless}}{{src}}{{#if imageWidth}} {{imageWidth}}{{/if}}{{/each}}"
+	<source {{#if ../settings.lazyload}}data-{{/if}}srcset="{{#each srcset}}{{#unless @first}}, {{/unless}}{{getUrl src}}{{#if imageWidth}} {{imageWidth}}{{/if}}{{/each}}"
 	        {{#if sizes}} sizes="{{#each sizes}}{{#unless @first}}, {{/unless}}{{screenWidth}} {{imageWidth}}{{/each}}"{{/if}}
 		{{#if media}} media="{{media}}"{{/if}}
 		{{#if type}} type="{{type}}"{{/if}} />
@@ -17,7 +17,7 @@ contextData: "picture-bp"
 	<!--[if IE 9]></audio><![endif]-->
 
 	{{#if content.fallbackSrc}}
-		<img class="picture__image{{#if settings.lazyload}} lazyload{{/if}}" src="{{content.fallbackSrc}}" alt="{{content.alt}}"/>
+		<img class="picture__image{{#if settings.lazyload}} lazyload{{/if}}" src="{{getUrl content.fallbackSrc}}" alt="{{content.alt}}"/>
 	{{else}}
 		<h3 style="color: red; font-weight: bold;">Define a fallback picture!</h3>
 	{{/if}}
