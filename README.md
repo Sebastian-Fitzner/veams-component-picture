@@ -11,6 +11,18 @@ Include responsive (content) images. It supports lazy loading (when provided in 
 
 -------
 
+## Installation 
+
+### Installation with Veams
+
+`veams install vc picture`
+
+### Installation with Bower
+
+`bower install veams-component-picture --save`
+
+----------- 
+
 ## Fields
 
 ### Settings
