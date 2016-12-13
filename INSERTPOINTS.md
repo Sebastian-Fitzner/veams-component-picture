@@ -16,7 +16,7 @@
 @import "components/_c-picture";
 // @INSERT :: END //
 
-// @INSERT :: START @tag: scss-import-self-contained //
+// @INSERT :: START @tag: scss-self-contained-import //
 @import "../templating/partials/components/picture/scss/_c-picture";
 // @INSERT :: END //
 ```
