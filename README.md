@@ -31,7 +31,7 @@ Include responsive (content) images. It supports lazy loading (when provided in 
 - settings.lazyload {`Boolean`} - _Set to true to use lazyload_
 
 ### Content
-- content.fallback {`String`} - _Path to fallback ima^„ge, e.g. "http://placehold.it/400x200" - mostly the smallest image defined in srcset._
+- content.fallback {`String`} - _Path to fallback image, e.g. "http://placehold.it/400x200" - mostly the smallest image defined in srcset._
 - content.alt {`String`} - _An alternative text describing the image if a user for some reason cannot view it._
 
 #### Content Items

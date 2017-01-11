@@ -1,3 +1,21 @@
+### v2.0.4
+- Fix typo in README.md
+
+### v2.0.3
+- Update insertpoints
+
+### v2.0.2
+- Update insertpoints
+
+### v2.0.1
+- Update readme
+
+### v2.0.0
+- Refactor data structure of all components
+- Add all important notes to readme
+- Exclude Insertpoints into own file
+- Add self-contained option
+
 ### v1.0.4
 - updated bower.json
 
