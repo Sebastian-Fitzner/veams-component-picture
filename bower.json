@@ -1,6 +1,6 @@
 {
 	"name": "veams-component-picture",
-	"version": "2.0.4",
+	"version": "3.0.0",
 	"ignore": [
 		".bowerrc",
 		".gitignore",
