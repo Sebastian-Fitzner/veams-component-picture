@@ -1,6 +1,6 @@
 {
 	"name": "veams-component-picture",
-	"version": "5.0.1",
+	"version": "5.1.0",
 	"description": "Include responsive (content) images. It supports lazy loading (when provided in your JavaScript) and uses a custom getUrl helper to print out the relative path or URL.",
 	"repository": {
 		"type": "git",

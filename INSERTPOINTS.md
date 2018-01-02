@@ -5,7 +5,7 @@
 ``` hbs
 {{! @INSERT :: START @id: picture, @tag: component-partial }}
 {{#with picture-bp.variations.default}}
-	{{> c-picture}}
+	{{> picture}}
 {{/with}}
 {{! @INSERT :: END }}
 ```
