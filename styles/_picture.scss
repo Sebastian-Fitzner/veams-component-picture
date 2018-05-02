@@ -6,6 +6,8 @@ COMPONENT: PICTURE
 Global Styles
 --------------------------------------------------- */
 [data-css="c-picture"] {
+	display: block;
+	line-height: 0;
 
 	.picture__image {
 		max-width: 100%;

@@ -1,0 +1,9 @@
+{
+	"type": "component",
+	"contextData": "picture",
+	"displayName": "picture",
+	"layout": "lyt-docs",
+	"scssFiles": [
+		"_picture.scss"
+	]
+}

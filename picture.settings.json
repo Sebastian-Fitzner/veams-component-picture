@@ -1,8 +1,0 @@
-{
-	"type": "component",
-	"contextData": "picture-bp",
-	"layout": "lyt-docs",
-	"scssFiles": [
-		"styles/_picture.scss"
-	]
-}

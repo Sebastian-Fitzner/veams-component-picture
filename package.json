@@ -1,10 +1,10 @@
 {
-	"name": "veams-component-picture",
-	"version": "5.1.0",
+	"name": "@veams/component-picture",
+	"version": "1.0.0",
 	"description": "Include responsive (content) images. It supports lazy loading (when provided in your JavaScript) and uses a custom getUrl helper to print out the relative path or URL.",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/Veams/veams-component-picture.git"
+		"url": "git://github.com/Veams/component-picture.git"
 	},
 	"keywords": [
 		"veams"
@@ -12,7 +12,7 @@
 	"author": "Sebastian Fitzner",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/Veams/veams-component-picture/issues"
+		"url": "https://github.com/Veams/component-picture/issues"
 	},
-	"homepage": "https://github.com/Veams/veams-component-picture#readme"
+	"homepage": "https://github.com/Veams/component-picture#readme"
 }
